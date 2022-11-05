@@ -21,7 +21,7 @@ if(login == 'admin')and(senha == 'admin'):
         else:
             hospedagem = 300
         quantidade_dias = int(input("Quantidade de dias:"))
-        op = int(input("escolha uma op:"))
+        op = int(input("escolha uma op :"))
         while (op == 2):
             excluir = int(input("Oq vc deseja escluir:"))
 print(f'{data}')
