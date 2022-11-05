@@ -1,0 +1,46 @@
+Contexto:
+Dona Mocinha é proprietária do lanchonete Mexicana, especializada em comida mexicana, localizada no município de São João dos Patos. Desejando entrar nas vendas delivery do carro chefe da lanchonete: TACOS, ela solicitou um sistema para o gerenciamento das vendas.
+
+Sabe-se que o sistema deverá imprimir um menu com as opções de TACO e seu valor. O usuário poderá escolher quantos Tacos desejar (sabor e quantidade).
+Ao final, o sistema deverá fornecer o valor total do pedido, a quantidade total de tacos pedidos e o valor a pagar com o acréscimo de R$ 5,00 do frete.
+Na tentativa de solucionar o problema, Seu Jereba propôs o código abaixo. Infelizmente, após vários testes, verificou-se que o mesmo não soluciona o problema.
+Sua tarefa é encontrar no mínimo 2 erros do código de Seu Jereba e apresentar a maneira correta de cada um.
+
+Código
+print("$$ Lanchonete Mexicana $$")
+print("$$ MENU TACOS $$")
+print("1. Al Pastor - R$ 10")
+print("2. La casa de papel - R$ 12")
+print("3. Sierra Madre - R$ 14")
+print("4. Chili Chicharito - R$ 16")
+opcao=int(input("Digite sua opcao:"))
+while(resp==1):
+if(opcao==1):
+print("1. Al Pastor")
+qtd=int(input("Digite a quantidade: "))
+qtd_total=qtd_total+qtd
+total=total +(qtd*10)
+elif (opcao==2):
+qtd=int(input("Digite a quantidade: "))
+qtd_total=qtd_total+qtd
+total=total +(qtd*10)
+elif(opcao==3):
+qtd=int(input("Digite a quantidade: "))
+qtd_total=qtd_total+qtd
+total=total +(qtd*10)
+elif(opcao==4):
+qtd=int(input("Digite a quantidade: "))
+qtd_total=qtd_total+qtd
+total=total +(qtd*10)
+else:
+print("Opcao invalida")
+resp=int(input("Deseja continuar? 1.Sim e 2.Nao"))
+print("Quantidade de tacos pedidos = {}".format(qtd_total))
+print("Valor total = {}".format(total))
+
+Resposta:
+
+qtd_total=qtd_total+qtd
+no segundo qtd_total ele não tem uma variável 
+resp = 1
+que tem que colocar resp=1 depois do while(resp==1): 

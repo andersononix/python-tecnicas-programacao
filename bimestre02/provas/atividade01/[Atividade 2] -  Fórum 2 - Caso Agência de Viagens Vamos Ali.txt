@@ -1,0 +1,48 @@
+Contexto:
+Seu Batoré é proprietário da agência de viagens Vamos Ali, localizada no município de São João dos Patos. Desejando melhorar o processo de vendas de pacotes de viagem, ele solicitou um sistema para calcular o valor do Transfer (serviço de transporte Aeroporto - Hotel ou Hotel - Aeroporto).
+Sabe-se que o valor é montado com os seguintes dados:
+- Cidade: Rio de Janeiro (R$ 80), Alagoas (R$ 50), Serra Gaucha (R$ 100)
+- Quantidade de pessoas: Mínimo de 02 passageiros.
+Na tentativa de solucionar o problema, Seu Jereba propôs o código abaixo. Infelizmente, após vários testes, verificou-se que o mesmo não soluciona o problema.
+Sua tarefa é encontrar os erros do código de Seu Jereba e propor a maneira correta.
+print ("@@ Agência de Viagem @@")
+print ("@@ Vamos Ali@@")
+nome_cliente=input("Nome do cliente: ")
+print ("@@ Menu Cidades @@")
+print ("1. Rio de Janeiro")
+print ("2. Alagoas ")
+print ("3. Serra Gaucha")
+opcao=int(input("Digite sua opção: "))
+if opcao = 1:
+v_cidade=80
+nome_cidade="Rio de Janeiro"
+elif opcao == 2
+v_cidade=50
+nome_cidade="Alagoas"
+elif opcao == 3:
+v_cidade=10
+nome_cidade="Serra Gaucha"
+else
+print("Opção inválida")
+qtd_pessoas=int(input("Quantidade de pessoas: "))
+if qtd_pessoas <= 2:
+v_total = v_cidade + qtd_pessoas
+print("Cliente: {}".format(nome_cliente))
+print("Cidade: {}".format(nome_cidade))
+print("Qtd pessoas: {}".format(qtd_pessoas))
+print("Valor total: {:.2f}".format(v_total))
+else
+print("Quantidade mínima de 2 pessoas")
+
+
+Resposta:
+
+errado:linha 12
+elif opcao == 2
+certo:
+elif opcao == 2:
+
+errado:linha 18
+else
+certo:
+else:

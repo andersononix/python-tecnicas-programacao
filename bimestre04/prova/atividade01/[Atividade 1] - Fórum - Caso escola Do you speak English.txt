@@ -1,0 +1,49 @@
+Contexto:
+Seu Pitoco é proprietário da Do you speak English?, uma escola de idiomas localizada no município de São João dos Patos. Neste mês ele resolveu presentear os 5 melhores alunos com bolsas de estudos para o novo curso da escola. Assim, solicitou um sistema de sorteio aleatório para indicar o os alunos vencedores.
+Na tentativa de solucionar o problema, Seu Jereba propôs o código abaixo. Infelizmente, após vários testes, verificou-se que o mesmo não soluciona o problema.
+Sua tarefa é encontrar no mínimo quatro erros do código de Seu Jereba e propor as correções.
+OBS: Alinhamento de código pode ser um erro
+
+
+#Código
+import random
+#Função que verifica se um numero já foi sorteado
+def verifica (lista):
+status=0
+if num not in lista:
+status=1 #numero não sorteado
+return status
+
+#Função para imprimir a lista dos vencedores
+def sorteados (lista,lista_al)
+for i in range (0,5):
+pos=lista[i]
+print(lista_alunos[pos])
+
+numeros_sorteados=list() # lista para armazenar numeros sorteados
+
+#lista de alunos para o sorteio
+alunos=['Dona Cotinha', 'Seu Jereba', 'Dona Mocinha','Seu Pereba','Dona Baratinha','Dona Gertrudes','Seu Pitoco','Dona Docinho','Dona Virgulina','Seu Batoré']
+i=0
+while i <=5:
+numero = random.randint(0,10) # função que gera valores aleatórios de 0 a 10
+resultado = verifica(numeros_sorteados,numero)
+if resultado ==1:
+numeros_sorteados.append(numero)
+i+=1
+print(numeros_sorteados)
+print("Lista de Alunos sorteados:")
+sorteado(numeros_sorteados, alunos)
+
+
+Resposta:
+
+errado:
+errado: 
+errado: return status
+errado: 
+
+certo: 
+certo: 
+certo:     return status "falta o 'tab' "
+certo: 

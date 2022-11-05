@@ -1,0 +1,27 @@
+Contexto:
+Dona Mocinha, proprietária do lanchonete Mexicana, desejando controlar o valor pago (semanal) a cada entregador, solicitou um sistema para o gerenciamento das vendas delivery.
+O sistema inicia solicitando a quantidade de entregadores. Para cada entregador, será solicitado a quantidade de dias trabalhados na semana. Em seguida, o quantitativo de vendas realizadas por dia. Sabe-se que a cada venda ele recebe R$ 10,00.
+Na tentativa de solucionar o problema, Seu Jereba propôs o código abaixo. Infelizmente, após vários testes, verificou-se que o mesmo não soluciona o problema.
+Sua tarefa é encontrar no mínimo 2 erros do código de Seu Jereba e apresentar a maneira correta.
+print("$$ Controle de Pagamento $$")
+qtd_entrega=int(input("Quantidade de entregadores? "))
+for i range (1,qtd_entrega):
+print("Entregador {}".format(i))
+qtd_dias=int(input("Quantidade de dia trabalhado? "))
+for j range (1,qtd_dias):
+pagamento=0
+qtd_vendas=int(input("Quantidade de vendas {}".format(j)))
+pagamento=qtd_vendas*10
+print("Total a ser pago: R$ {}".format(pagamento))
+
+Resposta:
+errado:
+for i range (1,qtd_entrega):
+certo:
+for i in range (1,qtd_entrega):
+-------------------------------------------
+errado:
+for j range (1,qtd_dias):
+certo:
+for j in range (1,qtd_dias):
+Anderson e kayck

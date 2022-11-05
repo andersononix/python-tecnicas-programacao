@@ -1,0 +1,47 @@
+Contexto:
+Dona Pituca é proprietária da Ateliê da Pituca, uma malharia localizada no município de São João dos Patos. Desejando melhorar o processo de vendas, ela solicitou um sistema para calcular o custo fixo unitário de um produto da empresa (CFP). Sabe-se que para o cálculo são necessários os seguintes dados:
+
+Salários dos funcionários (SF)
+Encargos Sociais (ES)
+Prestação de Serviço (PS)
+Despesas imóvel (DI)
+Despesas extras (DE)
+Quantidade de peças produzidas (QP)
+
+O valor é calculado com a fórmula abaixo:
+CFP = (SF + ES + PS + DI + DE) / QP
+
+Na tentativa de solucionar o problema, Seu Jereba propôs o código abaixo. Infelizmente, após vários testes, verificou-se que o mesmo não soluciona o problema.
+Sua tarefa é encontrar os erros do código de Seu Jereba.
+
+# Codigo Seu Jereba
+print("Informe os dados abaixo: ")
+nome_prod=input("Nome do produto ")
+SF=float(input("Soma dos salários dos funcionários "))
+ES = input("Encargos Sociais ")
+ps = float(input("Prestação de Serviço "))
+DI = float(input("Despesas imóvel "))
+QP = float(input("Quantidade de peças produzidas "))
+
+CFP = SF + ES + PS + DI + DE / QP
+
+print("O custo fixo unitário do é: {}".format(nome_prod,CFP))
+
+
+Solução:
+
+Alunos: Anderson , Erick
+1:O ES Não tem o float e o colchete depois do float e no final 
+2:Estar sem a variável DE de Despesa extras 
+3:CFP: Não tem os colchete para separar as soma e a divisão 
+4:CFP estar maiúsculo 
+print("Informe os dados abaixo: ")
+nome_prod=input("Nome do produto: ")
+SF=float(input("Soma dos salários dos funcionários: "))
+ES = float(input("Encargos Sociais "))
+ps = float(input("Prestação de Serviço "))
+DI = float(input("Despesas imóvel "))
+DE = float(input("Despesas extras "))
+QP = float(input("Quantidade de peças produzidas "))
+CFP = (SF + ES + ps + DI + DE) / QP
+print("O custo fixo unitário do é: {}" .format(nome_prod,CFP))

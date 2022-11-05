@@ -1,0 +1,7 @@
+v1 = int(input("Digite um valor: "))
+v2 = int(input("Digite o segundo valor: "))
+v3 = int(input("Digite teceiro valor: "))
+s = (v1 + v2 + v3)
+m = (v1 * v2 * v3)
+print("Valor da soma: {}" .format(s))
+print("Valor da mutiplicaçao: {}" .format(m))
