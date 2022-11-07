@@ -1,29 +1,62 @@
-#lista_Economica = []
-#lista_Executiva = []
-#lista_Primeira = []
-login = str(input("login:"))
-senha = str(input("senha:"))
-op = 1
-if(login == 'admin')and(senha == 'admin'):
-    print("Menu\n1 - Cadastrar: Armazenar e Imprimir\n2 - Excluir")
-    while (op == 1):
-        data = str(input("Qual é a data de partida:"))
-        print("[1]-EUA\n[2]-África\ndo Sul\n[3]-Japão")
-        local = int(input("Qual o local que deseja:"))
-        print("[1]-Classe Econômica\n[2]-Executiva\ndo Sul\n[3]-Primeira classe")
-        classes = int(input("Escolha uma classe:"))
-        print("[1]-3 estrelas (R$ 100,00 por dia)\n[2]-4 estrelas(R$ 200,00 por dia)\n[3]-5 estrelas (R$ 300,00 por dia)")
-        hospedagem = int(input("Escolha um tipo:"))
-        if(hospedagem == 1):
-            hospedagem = 100
-        elif(hospedagem == 2):
-            hospedagem = 200
-        else:
-            hospedagem = 300
-        quantidade_dias = int(input("Quantidade de dias:"))
-        op = int(input("escolha uma op :"))
-        while (op == 2):
-            excluir = int(input("Oq vc deseja escluir:"))
-print(f'{data}')
-print(f'{local}')
-print(f'{quantidade_dias}')
+#Funções
+def menuPrincipal():
+    print("MENU PRINCIPAL")
+    print("1 - Cadastrar")
+    print("2 - Excluir")
+    print("3 - Altera")
+    print("4 - Imprimir")
+    print("5 - Sair")
+
+def menuLocal():
+    print("Locais para viajar")
+    print("1 - EUA              (R$ 5.000,00)")
+    print("2 - África do Sul    (R$ 10.000,00)")
+    print("3 - Japão            (R$ 15.000,00)")
+
+def menuClasse():
+    print("Nosso servisos de voos")
+    print("1 - Classe econômica     (Valor da pasagem)")
+    print("2 - Classe executiva     (Aumento na pasagem de 30%)")
+    print("3 - Primeira classe      (Aumento na pasagem de 50%)")
+
+'''
+O usuário deverá escolher entre 3 tipos: 3 estrelas (R$ 100,00 por dia), 4 estrelas
+(R$ 200,00 por dia) e 5 estrelas (R$ 300,00)
+'''
+
+def menuHospedagem():
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+
+#Listas
+cadastros = []
+nomes = []
+datasPastidas = []
+locais = []
+classes = []
+hospedagens = []
+qtdsDias = []
+cadastros.append(nomes, datasPastidas, locais, classes, hospedagens, qtdsDias)
+
+print("NOME DA EMPRESA")
+
+#tela de login
+resp = 1
+while (resp == 1):
+    usuario = str(input("\nUsúario: "))
+    senha = str(input("Senha: "))
+    if(usuario == "1") and (senha == "1"):
+        menuPrincipal()
+        nome = str(input("Nome do cliente: "))
+        data = str(input("Data de partida: "))
+
+        nomes.append(nome)
+    else:
+        print("\nErro login incorreto")
+        print("Tente novamente")
+        resp = 1
+
+
