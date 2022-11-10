@@ -19,27 +19,24 @@ def menuClasse():
     print("2 - Classe executiva     (Aumento na pasagem de 30%)")
     print("3 - Primeira classe      (Aumento na pasagem de 50%)")
 
-'''
-O usuário deverá escolher entre 3 tipos: 3 estrelas (R$ 100,00 por dia), 4 estrelas
-(R$ 200,00 por dia) e 5 estrelas (R$ 300,00)
-'''
-
 def menuHospedagem():
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
+    print("Tipos de Hospedagem")
+    print("1 - 3 estrelas   (R$ 100,00 por dia)")
+    print("2 -  4 estrelas  (R$ 200,00 por dia)")
+    print("3 -  5 estrelas  (R$ 300,00)")
+
+def escolhaLocal(opcao):
+    if(opcao == 1):
+        print()
+
 
 #Listas
-cadastros = []
 nomes = []
 datasPastidas = []
 locais = []
 classes = []
 hospedagens = []
 qtdsDias = []
-cadastros.append(nomes, datasPastidas, locais, classes, hospedagens, qtdsDias)
 
 print("NOME DA EMPRESA")
 
@@ -49,14 +46,49 @@ while (resp == 1):
     usuario = str(input("\nUsúario: "))
     senha = str(input("Senha: "))
     if(usuario == "1") and (senha == "1"):
+        #INICIO
         menuPrincipal()
-        nome = str(input("Nome do cliente: "))
-        data = str(input("Data de partida: "))
+        opcao = int(input("Digiti sua opção: "))
 
-        nomes.append(nome)
+        #CASDASTRAR USUARIO
+        if  (opcao == 1):
+            nomes.append(str(input("Nome do cliente: ")))
+            datasPastidas.append(str(input("Data de partida: ")))
+            # Tipos de local
+            menuLocal()
+            opcao = int(input("Escolha sua opção: "))
+            escolhaLocal(opcao)
+            # Classes de voos
+            menuClasse()
+            classes.append(int(input("Escolha sua opção: ")))
+            # Hospedagem
+            menuHospedagem()
+            hospedagens.append(int(input("escolha sua opção: ")))
+            qtdsDias.append(str(input("Quantidade de dias: ")))
+
+        #EXCLUIR USUARIO
+        elif(opcao == 2):
+            print()
+
+        #ALTERAR CADASTRO DO USUARIO
+        elif (opcao == 3):
+            print()
+
+        #IMPRIMIR DADOS DO USUARIO
+        elif (opcao == 4):
+            print()
+
+        #SAIR
+        else:
+            print()
     else:
         print("\nErro login incorreto")
         print("Tente novamente")
         resp = 1
-
+print(nomes)
+print(datasPastidas)
+print(locais)
+print(classes)
+print(hospedagens)
+print(qtdsDias)
 
